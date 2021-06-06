@@ -1,0 +1,126 @@
+/* Body Section */
+
+html, body {
+	background: #57f1ff;
+}
+
+h1, audio {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+	font-size: 76px;
+	color: #475859;
+}
+
+.player {
+  padding-bottom: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+audio::-webkit-media-controls-panel {
+  color: indigo;
+}
+
+
+/* input search field */
+
+input {
+  color: grey;
+    width: 100%;
+}
+
+#search_field:hover,
+#search_field:focus {
+  border-color: #485559;
+}
+
+#search-form {
+  display: flex;
+ }
+
+input {
+  color: grey;
+}
+
+#submit_button {
+  font-size: 24px;
+  border: 1px solid #42ccd6;
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 0.2em 0.5em;
+  border-left: 0;
+  align-items: center;
+  outline: 0;
+  cursor: pointer;
+}
+
+
+/* results of song list */
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.artist_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1em;
+  width: 25%;
+}
+
+img {
+  box-shadow: .25em .25em .5em;
+  height: 132px;
+  width: 150px;
+}
+
+img:hover {
+  cursor: pointer;
+  background: transparent url(image/tune.png); 
+  opacity: 0.6;
+}
+
+
+/* multiple cards inherit  */
+img:active {
+  box-shadow: inset 0 0 0 0; 
+}
+
+.title_artist {
+  align-self: center;
+}
+
+.title {
+  width: 25%;
+  font-weight: 900;
+}
+
+#playing {
+  color: #5d7780;
+  font-size: small;
+  font-weight: bold;
+}
+
+#title {
+  color: #5d7780;
+  font-size: small;
+  list-style-type: none;
+  text-align: center
+}
+
+#artist {
+  color: #5d7780;
+  font-size: large;
+  font-weight: 600;
+  list-style-type: none;
+  text-align: center;
+}
